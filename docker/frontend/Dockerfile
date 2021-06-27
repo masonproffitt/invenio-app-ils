@@ -14,8 +14,8 @@ WORKDIR ${WORKING_DIR}
 
 # build React application
 RUN npm install
-RUN REACT_APP_INVENIO_UI_URL="https://127.0.0.1" \
- REACT_APP_INVENIO_REST_ENDPOINTS_BASE_URL="https://127.0.0.1/api" \
+RUN REACT_APP_INVENIO_UI_URL="https://uwws2.cern.ch" \
+ REACT_APP_INVENIO_REST_ENDPOINTS_BASE_URL="https://uwws2.cern.ch/api" \
  REACT_APP_ENV_NAME="dev" \
  npm run build
 
